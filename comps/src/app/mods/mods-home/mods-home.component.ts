@@ -7,9 +7,10 @@ import { Component, OnInit, ElementRef } from '@angular/core';
 })
 export class ModsHomeComponent {
 
-    constructor(private el: ElementRef) { }
+  modalOpen = false;
 
-    ngOnInit() {
-      document.body.appendChild(this.el.nativeElement)
-    }
+  onClick() {
+    this.modalOpen = !this.modalOpen;
+  }
+        
 }
