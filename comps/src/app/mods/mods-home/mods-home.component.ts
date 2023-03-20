@@ -9,6 +9,13 @@ export class ModsHomeComponent {
 
   modalOpen = false;
 
+  items = [
+    { title: 'Why is the sky blue?', content: 'Because of the air.'},
+    { title: 'Why is the ocean blue?', content: 'Because of the sky.'},
+    { title: 'Why is the marble blue?', content: 'Because of the cat.'}
+  ]
+
+
   onClick() {
     this.modalOpen = !this.modalOpen;
   }
